@@ -13,8 +13,7 @@ class Sidebar extends React.Component {
 render() {
     return (
      
-        
-
+       
 <div className="col-2">
         <nav className="navbar navbar-expand-md navbar-white bg-navbar fixed-left justify-content-between" id="sidebar">
           <div className="nav-container">
@@ -28,7 +27,7 @@ render() {
               <div className="navbar-nav">
                 <ul>
                   <li>
-                    <a className="nav-item nav-link" href="index.html"><i className="fas fa-home fa-lg" />&nbsp; Home
+                    <a className="nav-item nav-link" href="/"><i className="fas fa-home fa-lg" />&nbsp; Home
                     </a>
                   </li>
                   <li>
@@ -39,7 +38,7 @@ render() {
                     <div className="input-group mt-3">
                       <input onChange={this.props.queryHandler} value={this.props.query} type="text" className="form-control mb-2" id="searchField" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2" />
                       <div className="input-group-append" style={{marginBottom: '4%'}}>
-                        <button className="btn btn-outline-secondary btn-sm" type="button" id="button-addon1" onclick="search()">
+                        <button className="btn btn-outline-secondary btn-sm" type="button" id="button-addon1">
                           GO
                         </button>
                       </div>
@@ -59,14 +58,6 @@ render() {
       </div>
         
     
-        
-        
-        
-        
-        
-        
-        
-        
         
         
         

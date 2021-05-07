@@ -13,14 +13,14 @@ class Mediaplayer extends React.Component {
 
         return (
             <>
-                <div className="player container-fluid fixed-bottom bg-container pt-1">
+                <div style={{marginLeft: "230px"}}className="player container-fluid fixed-bottom bg-container pt-1">
                     <div className="row flex-nowrap justify-content-between playBar py-3">
                         <div className="col-auto">
                             <div className="playerArtistInfo d-flex">
-                                <img />
+                                <img height="50px" src={this.props.selectedSong.album.cover_xl} />
                                 <div className="d-flex flex-column pl-2">
-                                    <h6 />
-                                    <p />
+                                    <h6> {this.props.selectedSong.title}</h6> 
+                                    <p>{this.props.selectedSong.artist.name}</p>
                                 </div>
                             </div>
                         </div>

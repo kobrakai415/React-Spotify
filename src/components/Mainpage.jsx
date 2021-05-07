@@ -22,14 +22,15 @@ class Mainpage extends React.Component {
 
         <div className="row justify-content-center">
           <div className="col-10">
-            <div id="searchResults" style={{display: 'none'}}>
+            <div id="searchResults">
               <h2>Search Results</h2>
-              <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3" />
+              <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3" >
             {this.props.songs.map(song =>{
                 
-                <SongContainer song={song} />
+                return <SongContainer key={song.id} selectedSongHandler={this.props.selectedSongHandler} song={song} />
 
             })}
+            </div>
             </div>
           </div>
         </div>
